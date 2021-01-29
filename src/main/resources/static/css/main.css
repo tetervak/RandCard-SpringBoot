@@ -1,18 +1,19 @@
-/*
-    Created on : May 11, 2016, 11:13:24 PM
-    Author     : Alex
-*/
 body{
+    padding-left: 1em;
     font-family: sans-serif;
+}
+
+main{
     padding-left: 1em;
 }
 
 h1{
-    color: darkcyan;
+    color: #4caf50;
+    text-shadow: 2px 2px 5px #81c784;
 }
 
 a{
-    color: limegreen;
+    color: #0288D1;
     font-weight: bolder;
     text-decoration: none;
 }
@@ -22,16 +23,7 @@ a:hover{
 }
 
 span.cardName{
-    color:orangered;
+    font-size: larger;
     font-weight: bolder;
-}
-
-footer{
-    font-size: 1.2em;
-    font-weight: bolder;
-    border-top: silver solid;
-    padding-top: 0.5em;
-    margin-top: 1.5em;
-    width: 18em;
-    color: lightslategrey;
+    color: #ff9800;
 }

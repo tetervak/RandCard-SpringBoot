@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <title>RandCard</title>
     <link rel="stylesheet" href="../static/css/main.css" th:href="@{css/main.css}">
+    <link rel="stylesheet" href="../static/css/footer.css" th:href="@{css/footer.css}">
 </head>
 <body>
-    <main>
-        <h1>Random Card</h1>
-        <p>
-            You picked
-            <span class="cardName" th:text="${card.name}">Seven of Hearts</span>
-        </p>
-        <p>
-            <img src="../static/images/cards/20.png"
-                th:src="'images/cards/'+ ${card.number} + '.png'"
-                alt="Seven of Hearts"
-                th:alt="${card}">
-        </p>
-        <p>
-            <a href="Card.html" th:href="@{Card}">Next Card</a>
-        </p>
-    </main>
-    <footer>
-        Sheridan College, 2021
-    </footer>
+<header>
+    <h1>Random Card</h1>
+</header>
+<main>
+    <p>
+        You picked
+        <span class="cardName" th:text="${card.name}">Seven of Hearts</span>
+    </p>
+    <p>
+        <img src="../static/images/cards/20.png"
+            th:src="'images/cards/'+ ${card.number} + '.png'"
+            alt="Seven of Hearts"
+            th:alt="${card}">
+    </p>
+    <p>
+        <a href="Card.html" th:href="@{Card}">Next Card</a>
+    </p>
+</main>
+<footer>
+    Sheridan College&nbsp;&nbsp;<span class='hart'>&#9825;</span>&nbsp;&nbsp;2021
+</footer>
 </body>
 </html>
