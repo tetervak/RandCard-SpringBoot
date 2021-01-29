@@ -1,0 +1,37 @@
+/*
+    Created on : May 11, 2016, 11:13:24 PM
+    Author     : Alex
+*/
+body{
+    font-family: sans-serif;
+    padding-left: 1em;
+}
+
+h1{
+    color: darkcyan;
+}
+
+a{
+    color: limegreen;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+span.cardName{
+    color:orangered;
+    font-weight: bolder;
+}
+
+footer{
+    font-size: 1.2em;
+    font-weight: bolder;
+    border-top: silver solid;
+    padding-top: 0.5em;
+    margin-top: 1.5em;
+    width: 18em;
+    color: lightslategrey;
+}
