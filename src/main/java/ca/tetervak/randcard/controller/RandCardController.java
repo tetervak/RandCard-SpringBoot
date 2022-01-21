@@ -19,7 +19,7 @@ public class RandCardController {
         Card card = new Card();
         logger.debug("card = " + card);
 
-        model.addAttribute("card", new Card());
+        model.addAttribute("card", card);
         return "Card";
     }
 
