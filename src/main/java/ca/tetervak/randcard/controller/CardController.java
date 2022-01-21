@@ -12,7 +12,7 @@ public class CardController {
 
     private final Logger logger = LoggerFactory.getLogger(CardController.class);
 
-    @GetMapping(value={"/", "/Card"})
+    @GetMapping(value={"/", "/random-card"})
     public String card(Model model){
         logger.trace("card() is called");
 
