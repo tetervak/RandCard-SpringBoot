@@ -17,12 +17,12 @@
     </p>
     <p>
         <img src="../static/images/cards/20.png"
-            th:src="'images/cards/'+ ${card.number} + '.png'"
+            th:src="|images/cards/${card.number}.png|"
             alt="Seven of Hearts"
             th:alt="${card}">
     </p>
     <p>
-        <a href="Card.html" th:href="@{Card}">Next Card</a>
+        <a href="Card.html" th:href="@{random-card}">Next Card</a>
     </p>
 </main>
 <footer>

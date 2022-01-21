@@ -12,9 +12,15 @@ public class CardController {
 
     private final Logger logger = LoggerFactory.getLogger(CardController.class);
 
-    @GetMapping(value={"/", "/Card"})
-    public String card(Model model){
-        logger.trace("card() is called");
+    @GetMapping("/")
+    public String index(){
+        logger.trace("index() is called");
+        return "redirect:random-card";
+    }
+
+    @GetMapping("/random-card")
+    public String randomCard(Model model){
+        logger.trace("randomCard() is called");
 
         RandCard card = new RandCard();
         logger.debug("card = " + card);
