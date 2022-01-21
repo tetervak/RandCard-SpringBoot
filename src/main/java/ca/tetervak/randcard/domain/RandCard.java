@@ -2,7 +2,7 @@
 
 package ca.tetervak.randcard.domain;
 
-public class Card {
+public class RandCard {
 
     private final static String[] SUITS
             = {"Spades", "Hearts", "Diamonds", "Clubs"};
@@ -13,7 +13,7 @@ public class Card {
     final private int number;
     final private String name;
 
-    public Card(){
+    public RandCard(){
         int rand = (int) (52 * Math.random());
         name = FACES[rand % 13] + " of " + SUITS[rand / 13];
         number = rand + 1;
